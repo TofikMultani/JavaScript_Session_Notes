@@ -1,0 +1,27 @@
+<script>
+    //fucnction declaration
+    console.log(addition(10,20));
+    function addition(numbner1, number2)
+    {
+        return numbner1 + number2;
+    }
+//----------------------------------------------------------
+
+    //function expression declaration
+    //subtraction(30,10); -- it will give error because function expression is not hoisted----reference error----reference before initialization
+    let subtraction = function(number1,number2)
+    {
+        return number1 - number2;
+    }
+    console.log(subtraction(30,10)); //after declaration it can be used subtraction function
+//--------------------------------------------------------------------------------------------------
+
+
+    // console.log(multiplication(5,4)); // it will give error because arrow function is not hoisted----reference error----reference before initialization
+    //arrow function declaration
+    let square = num => num * num;
+    console.log(square(5));
+
+
+    
+</script>

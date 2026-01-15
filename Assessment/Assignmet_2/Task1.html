@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Assessment 2: Task 1</title>
+    <script src="task1.js" defer></script>
+    <style>
+        h2,
+        ul,
+        p,
+        button {
+            font-family: 'Jetbrains Mono';
+            color: brown;
+        }
+
+        button {
+            padding: 5px 20px !important;
+            width: 150px;
+            border: 1px solid brown;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: rgb(255, 227, 190);
+            font-size: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Student Marks</h2>
+    <ul id="marksList">
+    </ul>
+
+    <button onclick="addMark()">Add Mark</button>
+    <button onclick="showPassed()">Show Passed</button>
+    <button onclick="showFailed()">Show Failed</button>
+    <button onclick="showTotal()">Show Total</button>
+
+    <p id="output"></p>
+</body>
+
+</html>
+

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Task 3</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            color: #333;
+            font-family: 'Roboto';
+        }
+
+        body {
+            height: 100vh;
+            width: 100vw;
+            background-color: #4787ed;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            border: 5px solid #333;
+            border-radius: 25px;
+            padding: 30px 80px;
+            background-color: aliceblue;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .manipulateDOM {
+            border: 2px solid #333;
+            border-radius: 8px;
+            padding: 10px 20px;
+            background-color: #4787ed;
+            cursor: pointer;
+            color: aliceblue;
+            font-size: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="myHeading">This is Heading...</h1>
+        <button class="manipulateDOM" onclick="changeHeading()">Change Heading</button>
+    </div>
+
+    <script>
+        function changeHeading() {
+            document.getElementById("myHeading").innerText = "Tofik Multani";
+        }
+    </script>
+</body>
+</html>
