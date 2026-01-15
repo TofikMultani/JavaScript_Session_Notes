@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation Form</title>
+</head>
+<body>
+    <h1 id="mainHeading" >Login Form</h1>
+    <form>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        <br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <br><br>
+        <button type="submit" value="Login" onclick="functionName()">Login</button>
+    </form>
+    <style>
+        .mainHeading{
+            color: red;
+            background-color: yellow;
+            font-size:x,large;
+            font-family: 'roboto';
+
+        }
+        .h1{
+            color: green;
+            background-color: lightgray;
+            font-size: xx-large;
+            font-family: 'arial';
+        }
+    </style>
+    <p id="selecter">Don't Triggered any Events</p>
+
+    <script>
+        document.getElementById("mainHeading");
+        mainHeading.style.color = "blue";
+        mainHeading.style.backgroundColor = "lightgray";
+        mainHeading.classList.add("h1");
+        console.log(mainHeading.classList);
+
+        document.getElementById("username").addEventListener("focus",onFocusFunction);
+        document.getElementById("username").addEventListener("keypress",function(event){
+            
+        });
+
+
+       
+
+    </script>
+</body>
+</html>
